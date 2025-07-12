@@ -23,7 +23,6 @@ const users: User[] = [
 export class UsersService {
   findUserByName(username: string): Promise<User | undefined> {
     const userFound = users.find((user) => user.username === username);
-    console.log('user = ', userFound);
     return Promise.resolve(userFound);
   }
 }
